@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/eleven.js"></script>
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css" >
+</head>
+<body onload="iFrameOn();">
+<h2>Eleven Editor</h2>
+<form action="output.php" name="vasigo_form" id="vasigo_form" method="post">
+<div class="vasigo">
+        <!-- text field for title of the post -->
+        <input name="title" class="title" id="title" type="text"  placeholder="Title" maxlength="80" />                    
+        
+        <!-- text field for title of the post -->
+        <input name="name" class="name" id="name" type="text"  placeholder="Your name" maxlength="80" />
+    
+        <!-- panel holding options -->
+        <div class="panel">
+                        <!-- options -->       
+                        <a href="javascript:;" onClick="iBold()" class="fa fa-bold" id="toggler" title="bold"></a>
+                        <a href="javascript:;" onClick="iUnderline()" class="fa fa-underline" title="Underline"></a>
+                        <a href="javascript:;" onClick="iItalic()" class="fa fa-italic" title="Italic"></a>
+                        <a href="javascript:;" onClick="strike()" class="fa fa-strikethrough" title="strike"></a>
+                        <a href="javascript:;" onClick="subs()" class="fa fa-subscript" title="subscript"></a>
+                        <a href="javascript:;" onClick="supers()" class="fa fa-superscript" title="superscript"></a>
+                            <span id="seperator">|</span>
+                        <a href="javascript:;" onClick="undos()" class="fa fa-undo" title="undo"></a>
+                        <a href="javascript:;" onClick="redos()" class="fa fa-repeat" title="redo"></a>
+                            <span id="seperator">|</span>
+                        <a href="javascript:;" onClick="justify()" class="fa fa-align-justify" title="Justify"></a>
+                        <a href="javascript:;" onClick="right()" class="fa fa-align-right" title="align right"></a>
+                         <a href="javascript:;" onClick="left()" class="fa fa-align-left" title="align left"></a>
+                        <a href="javascript:;" onClick="center()" class="fa fa-align-center" title="align center"></a>
+                            <span id="seperator">|</span>
+                        <a href="javascript:;" onClick="iFontSize()" class="fa fa-text-height" title="text size"></a>
+                        <a href="javascript:;" onClick="iForeColor()" class="fa fa-pencil" title="font color"></a>
+                        <a href="javascript:;" onClick="iHorizontalRule()" class="fa fa-minus" title="Horizontal Rule"></a>
+                        <a href="javascript:;" onClick="iUnorderedList()" class="fa fa-list-ul" title="Unordered List"></a>
+                        <a href="javascript:;" onClick="iOrderedList()" class="fa fa-list-ol" title="Ordered List"></a>
+                        <a href="javascript:;" onClick="iLink()" class="fa fa-link" title="Link"></a>
+                        <a href="javascript:;" onClick="iUnLink()" class="fa fa-unlink" title="UnLink"></a>
+                        <a href="javascript:;" onClick="iImage()" class="fa fa-picture-o" title="Image"></a>
+                            <span id="seperator">|</span>
+                        <a href="javascript:;" onClick="print()" class="fa fa-print" title="print"></a>
+                        
+        </div><!-- ./ panel -->
+        <textarea style="display:none;" class="textarea" name="vasigo_text" id="vasigo_text" cols="100" rows="30"></textarea>
+        <iframe name="vasigo_richtext" id="vasigo_richtext" class="richtext"></iframe>
+    
+        <!-- Swap the textarea -->
+        <input  class="submit" type="button" value="Update" onClick="javascript:submit_form();"/>
+</div><!-- ./vasigo -->
+</form>
+</body>
+</html>
+
+
+
+

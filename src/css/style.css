@@ -1,0 +1,83 @@
+.vasigo {
+width:777px;
+position:relative;
+overflow:visible;
+}
+
+.panel {
+width:100%;
+background:#fff;
+box-shadow:0 1px 2px rgba(0,0,0,0.2);
+z-index:3;
+}
+
+.submit {
+background:#fff;
+box-shadow:0 1px 2px rgba(0,0,0,0.2);
+font-family:verdana;
+padding:3px 7px;
+}
+
+#seperator {
+background:#b8b8b8;
+box-shadow:0 1px 2px rgba(0,0,0,0.2);
+width:2px;
+color:#b8b8b8;
+}
+
+.submit:hover {
+background:#ccc;
+box-shadow:0 1px 2px rgba(0,0,0,0.2);
+color:#000;
+font-family:verdana;
+padding:3px 7px;
+}
+
+.panel a {
+color:#333;
+text-decoration:none;
+zoom:1;
+padding:7px;
+}
+
+.panel a:hover {
+color:#222;
+background:#b8b8b8;
+}
+
+.title, .name {
+position:relative;
+outline:none;
+background:#fff;
+box-shadow:none!important;
+white-space:normal;
+border:1px solid #eee;
+box-sizing:border-box;
+padding:5px;
+width: 100%;
+margin-bottom: 20px;
+}
+
+.richtext {
+position:relative;
+width:100%;
+overflow:auto;
+outline:none;
+background:#fff;
+box-shadow:none!important;
+white-space:normal;
+border:1px solid #eee;
+box-sizing:border-box;
+margin:2px 0 0!important;
+padding:10px 20px 5px;
+}
+
+.panel a:active,.highlight {
+color:#fff;
+background:#111;
+}
+
+.holder {
+margin-left: 200px;
+margin-right: 600px;
+}
