@@ -1,46 +1,12 @@
 function iFrameOn(){
 	vasigo_richtext.document.designMode = 'On';
 }
-function justify() {
-    vasigo_richtext.document.execCommand('JustifyFull');
-}
-function right() {
-    vasigo_richtext.document.execCommand('JustifyRight');
-}
-function left() {
-    vasigo_richtext.document.execCommand('JustifyLeft');
-}
-function center() {
-    vasigo_richtext.document.execCommand('JustifyCenter');
+function cmd(command){
+    vasigo_richtext.document.execCommand(command);
 }
 function print() {
     vasigo_richtext.document.execCommand('Print', true);
 }
-function strike(){
-    vasigo_richtext.document.execCommand('StrikeThrough');
-}
-function subs(){
-    vasigo_richtext.document.execCommand('Subscript');
-}
-function supers(){
-    vasigo_richtext.document.execCommand('Superscript');
-}
-function undos(){
-    vasigo_richtext.document.execCommand('Undo');
-}
-function redos(){
-    vasigo_richtext.document.execCommand('Redo');
-}
-function iBold(){
-	vasigo_richtext.document.execCommand('bold',false,null); 
-}
-function iUnderline(){
-	vasigo_richtext.document.execCommand('underline',false,null);
-}
-function iItalic(){
-	vasigo_richtext.document.execCommand('italic',false,null); 
-}
-
 function iFontSize(){
 	var size = prompt('Enter a size 1 - 7', '');
 	vasigo_richtext.document.execCommand('FontSize',false,size);
